@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas first</title>
+</head>
+<style>
+    body {
+        
+        margin: 0px;
+        background-color: rgb(4, 27, 4);
+        
+    }
+
+    .rulebook ul {
+        background-color: orange;
+        font-size: 20px;
+        list-style-type: disc;
+    }
+
+    .rulebook h3 {
+        background-color: orange;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+
+    }
+
+    .rulebook {
+        max-width: 600px;
+        margin: 0px auto;
+        opacity: 0.8;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    div {
+        display: block;
+        position: absolute;
+
+        left: 380px;
+        top: 150px;
+
+        z-index: 2;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 10px;
+        text-decoration-style: none;
+
+    }
+
+
+
+    .btn {
+        background-color: red;
+        font-size: 34px;
+        text-decoration: none;
+        cursor: pointer;
+        top: 500px;
+    }
+
+
+
+    #demo {
+        background-color: orange;
+        width: 100px;
+    }
+
+    #storage {
+        background-color: orange;
+        width: 100px;
+    }
+
+
+
+    #start {
+        opacity: 1;
+    }
+
+    #restart {
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <div class="initial">
+        <p id="best"></p>
+        <!--p id="demo">"Time is"</p>
+        <p id='storage'>"Best time is"</p-->
+        <!--button class="btn" id="bestscores" value="Know Best Scores"></button!-->
+        <section class="rulebook" id="rules">
+            <h3>Rules :</h3>
+            <ul>
+                <li>Press the 'Click to Start' button to reach the platform.</li>
+                <li>You need to burst the bubbles that appear of random sizes across the screen as it might shoot up
+                    before you speed up.</li>
+                <li>Timer runs on the left hand side and the current score recorder on the right hand side you can
+                    restart any time you want using the button provided.</li>
+                <li>As you slow down bubbles can sped up and the game may end anytime soon.</li>
+            </ul>
+        </section>
+        <section class="buttons">
+
+            <button class="btn" onclick="mytimer=setInterval(timer,1)" id="start"><a href="con2.html"
+                    target="_self">Click to Start</a></button>
+
+            <button class="btn" id="restart"><a href="con2.html" target="_self">Restart</a></button>
+        </section>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <canvas id="can"></canvas>
+    <script src="revision.js"></script>
+
+</body>
+
+</html>
